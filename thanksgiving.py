@@ -87,8 +87,11 @@ Pupil2 =  Circle(110, 60, 8, fill= 0x00000, outline = 0xFFFFFF)
 main_group.append(Pupil2)
 
 
-Feet1 =Rect(110, 20, 25, 10, fill= 0xFFA500, outline= 0xFFFFF, stroke= 0xFFFFF)
+Feet1 =Rect(95,108, 25, 10, fill= 0xFFA500)
 main_group.append(Feet1)
+
+Feet2 =Rect(112,108, 25, 10, fill= 0xFFA500)
+main_group.append(Feet2)
 
 
 count = 0
