@@ -67,7 +67,13 @@ main_group.append(shadow)
 
 #circle
 
-BODY = Circle(120, 60, 50, fill= 0x964B00, outline = 0xFFFFFF)
+feathers1 = RoundRect(70, 40, 101, 60, 30, fill= 0xFFFF00)
+main_group.append(feathers1)
+
+feathers2 = RoundRect(80, 40, 101, 60, 30, fill= 0x8B0000)
+main_group.append(feathers2)
+
+BODY = Circle(120, 80, 40, fill= 0x964B00, outline = 0xFFFFFF)
 main_group.append(BODY)
 
 HEAD =  Circle(120, 60, 30, fill= 0x964B00, outline = 0xFFFFFF)
@@ -87,10 +93,10 @@ Pupil2 =  Circle(110, 60, 8, fill= 0x00000, outline = 0xFFFFFF)
 main_group.append(Pupil2)
 
 
-Feet1 =Rect(95,108, 25, 10, fill= 0xFFA500)
+Feet1 =Rect(100,120, 25, 10, fill= 0xFFA500)
 main_group.append(Feet1)
 
-Feet2 =Rect(112,108, 25, 10, fill= 0xFFA500)
+Feet2 =Rect(118,120, 25, 10, fill= 0xFFA500)
 main_group.append(Feet2)
 
 
