@@ -7,6 +7,7 @@ from adafruit_st7789 import ST7789
 from adafruit_display_shapes.circle import Circle
 from adafruit_display_shapes.rect import Rect
 from adafruit_display_shapes.polygon import Polygon
+from adafruit_display_shapes.roundrect import RoundRect
 
 # Constants
 PUMPKIN_CENTER_X = 120
@@ -66,7 +67,6 @@ main_group.append(shadow)
 
 
 #circle
-
 feathers1 = RoundRect(60, 40, 101, 60, 30, fill= 0xFFFF00)
 main_group.append(feathers1)
 
@@ -100,7 +100,19 @@ Feet2 =Rect(118,120, 25, 10, fill= 0xFFA500)
 main_group.append(Feet2)
 
 
-count = 0
-direction = 1
+
+
+direction_x = 1
+velocity_x = 3
 while True:
-   pass
+    if Pupil1.x >= 100 or Pupil1.x <= 99:
+        direction_x *= -1
+    Pupil1.x += (velocity_x * direction_x)
+    time.sleep(0.5)
+    if Pupil2.x >= 110 or Pupil2.x <= 90:
+        direction_x *= -1
+    Pupil2.x += (velocity_x * direction_x)
+    time.sleep(0.5)
+    
+pass
+
